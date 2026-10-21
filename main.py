@@ -1,11 +1,16 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS
+
 
 from vhx import gethome, search
 from category import get_category
 from gallery_profile import get_gallery, get_profile
 
 
+#from flask_cors import CORS
+
 app = Flask(__name__)
+CORS(app)
 
 
 # ============================================================
@@ -261,3 +266,5 @@ if __name__ == "__main__":
         use_reloader=False,
         threaded=True
     )
+    
+    
