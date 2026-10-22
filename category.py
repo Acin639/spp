@@ -4,7 +4,7 @@ import json
 from bs4 import BeautifulSoup
 from urllib.parse import urljoin
 
-BASE_URL = "https://xnxx.com"
+BASE_URL = "https://xnxx.com/search"
 
 HEADERS = {
     "User-Agent": (
